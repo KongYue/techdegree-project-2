@@ -1,0 +1,189 @@
+/*  Page Style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+.container {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-header,
+.contact {
+  background-color: aliceblue;
+  padding-top: 0;
+}
+.contact h2 {
+  margin-top: 0;
+}
+
+/* About Navigation */
+.main-nav li {
+  text-align: center;
+  margin-top:6px;
+  margin-bottom: 6px;
+}
+.main-nav a:hover {
+  color: red;
+}
+/* Content area */
+.contact p {
+  margin: 0;
+}
+.portfolio-list img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+.feat-img {
+  width: 70%;
+  height: auto;
+  padding: 5px;
+}
+/* To get extra mark */
+.portfolio a {
+  color: greenyellow;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+nav {
+    border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+
+/*  About Footer*/
+.main-footer {
+  background-color: aliceblue;
+  margin-bottom: 85px;
+}
+.name,
+.footer-name,
+.backtotop
+{
+  margin: 0;
+}
+.footer-name {
+  float: left;
+  width: 50%;
+  background-color: inherit;
+
+}
+.backtotop {
+  width: 50%;
+  float: right;
+  text-align: right;
+  background-color: inherit;
+}
+
+
+/* Media Queries */
+
+/* 769px */
+@media (min-width: 768px) {
+
+  .wrap {
+    min-height: calc(100vh-95.91px);
+  }
+  .name,
+  .main-nav li
+  {
+    display: inline-block;
+  }
+  .main-nav li {
+    background-color: inherit;
+    padding: 0 15px;
+  }
+
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear:both;
+  }
+
+  .marketing-page,
+  .travel-app,
+  .photo-gallery {
+    float: left;
+    width: 50%;
+    background-color: white;
+  }
+  .search-page,
+  .mapof-favoritespots,
+  .calculator {
+    float: right;
+    width: 50%;
+    background-color: white;
+  }
+
+
+  .introduction p {
+    float: left;
+    width: 70%;
+  }
+  .introduction img{
+    width: 30%;
+    height: auto;
+    float: right;
+  }
+  /* Solve the problem of float item jump out of div */
+  .introduction {
+    overflow: hidden;
+  }
+  .wholeportfolio {
+    clear:both;
+  }
+  .contact {
+    clear:both;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+  .wrap {
+    min-height: calc(100vh-95.91px);
+  }
+  .name,
+  .main-nav,
+  .main-nav li
+  {
+    display: inline-block;
+  }
+  .name {
+    margin-right: 150px;
+  }
+  .portfolio-list li {
+    width: 33.33%;
+    float: left;
+  }
+
+}
