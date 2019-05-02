@@ -1,16 +1,29 @@
-/*  Page Style */
+
+/* =================================
+  Base Element Styles
+==================================== */
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Open sans", Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   color: #3a3a3a;
 }
 a {
   color: #4a4a4a;
   text-decoration: none;
+  padding: 2px;
+  font-size: 18px;
 }
+p {
+  font-size: 17px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
 .container {
   text-align: center;
   padding-left: 1em;
@@ -22,20 +35,30 @@ a {
   background-color: aliceblue;
   padding-top: 0;
 }
+.main-header {
+  padding-bottom: 5px;
+}
 .contact h2 {
   margin-top: 0;
+}
+.name {
+  margin-top: 0;
+}
+.introduction p {
+  max-width:600px;
 }
 
 /* About Navigation */
 .main-nav li {
-  text-align: center;
-  margin-top:6px;
-  margin-bottom: 6px;
+  margin:6px 6px;
+  background: white;
+  padding: 3px 0;
 }
 .main-nav a:hover {
   color: red;
 }
-/* Content area */
+
+/* Layout Container */
 .contact p {
   margin: 0;
 }
@@ -49,62 +72,51 @@ a {
   height: auto;
   padding: 5px;
 }
+.skills img {
+  width: 3%;
+  height: auto;
+}
+.skills li {
+
+}
+
 /* To get extra mark */
 .portfolio a {
   color: greenyellow;
   font-family: 'ZCOOL KuaiLe', cursive;
 }
-nav {
-    border-bottom: 1px solid black;
-}
-
-.crumbs ol {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.crumb {
-    display: inline-block;
-}
-
-.crumb a::after {
-    display: inline-block;
-    color: #000;
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
-}
 
 
-/*  About Footer*/
+
+/*   Footer */
 .main-footer {
   background-color: aliceblue;
-  margin-bottom: 85px;
+  border-top:solid 1px black;
+  overflow: hidden;
 }
-.name,
-.footer-name,
-.backtotop
-{
-  margin: 0;
-}
+
 .footer-name {
   float: left;
-  width: 50%;
-  background-color: inherit;
-
+  margin: 0;
 }
-.backtotop {
-  width: 50%;
+.footer-nav {
   float: right;
-  text-align: right;
-  background-color: inherit;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.footer-links {
+  display: none;
+}
+.footer-links a:hover {
+    color: red;
 }
 
 
-/* Media Queries */
+/* ================================
+   Media Queries
+   =================================*/
 
-/* 769px */
+/* Tablet Size */
 @media (min-width: 768px) {
 
   .wrap {
@@ -152,6 +164,29 @@ nav {
     height: auto;
     float: right;
   }
+
+.skills li {
+  background-color: aliceblue;
+  padding: 2px;
+  width: 50%;
+  border: solid 1px black;
+}
+.skill-adobepremiere,
+.skill-tencentqq
+{
+  float: left;
+}
+
+.skill-angular,
+.skill-html5 {
+   float: right;
+}
+
+.skills {
+ overflow: hidden;
+  clear: both;
+}
+
   /* Solve the problem of float item jump out of div */
   .introduction {
     overflow: hidden;
@@ -162,7 +197,26 @@ nav {
   .contact {
     clear:both;
   }
+  .contact p{
+  width: 80%;
+  margin:0 auto;
 }
+
+
+ /* Footer */
+.back-to-top {
+  display: none;
+}
+.footer-links {
+  display: block;
+}
+.footer-links li {
+  display: inline-block;
+}
+
+}
+
+/* Desktop Size */
 @media (min-width: 1024px) {
   .container {
     width: 80%;
@@ -178,12 +232,25 @@ nav {
   {
     display: inline-block;
   }
+
   .name {
-    margin-right: 150px;
+    float: left;
   }
+  .main-nav {
+    float: right;
+}
   .portfolio-list li {
     width: 33.33%;
     float: left;
   }
+  .portfolio-list {
+    overflow: hidden;
+}
+  .contact p{
+  width: 70%;
+  margin:0 auto;
+}
+
+/* ??Questions: Width between 1026- 1064 px, the second line of portfolio breaks*/
 
 }

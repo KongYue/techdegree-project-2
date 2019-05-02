@@ -3,9 +3,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <meta charset="utf-8"/>
-  <title>Best City Guide</title>
+  <title>Student Name Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CMaven+Pro:900" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
   <div class="wrap">
     <header class="main-header">
       <div class="container ">
-        <h1 class="name"><a href="#">Student Name</a></h1>
+        <h1 class="name">Student Name</h1>
         <ul class="main-nav">
           <li><a href="#">HOME</a></li>
           <li><a href="#skills">SKILLS</a></li>
@@ -27,18 +28,15 @@
         <p class="introduction-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
       </div>
     </header>
-    <nav class="crumbs">
-    <ol >
-      <li class="crumb"><a href="#">HOME</a></li>
-      <li class="crumb"><a href="#skills">SKILLS</a></li>
-      <li class="crumb"><a href="#portfolio">PORTFOLIO</a></li>
-      <li>CONTACT</li>
-    </ol>
-    </nav>
     <section id="skills">
       <div class="container skills">
         <h2><a href="">SKILLS</a></h2>
-        <p>My skills are including HTML, CSS and Javascript.</p>
+         <ul>
+           <li class="skill-adobepremiere"><a href=""><img src="images/adobepremiere.svg" alt="Kiwi standing on oval">Using adobe premiere to edit videos</a></li>
+           <li class="skill-angular"><a href=""><img src="images/angular.svg" alt="angular">Using angular to build web applications</a></li>
+           <li class="skill-tencentqq"><a href=""><img src="images/tencentqq.svg" alt="tencentqq">Using tencenqq to chat</a></li>
+           <li class="skill-html5"><a href=""><img src="images/html5.svg" alt="html5">Programming using HTML5</a></li>
+         </ul>
       </div>
     </section>
     <section id="portfolio">
@@ -85,15 +83,25 @@
         <section id="contact">
           <h2 ><a href="#">CONTACT</a></h2>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-          <p>Phone +111155551234</p>
-          <p>Email: email@yoursite.com</p>
+          <p>Phone <strong> +111155551234</strong></p>
+          <p>Email:<strong> email@yoursite.com</strong></p>
         </section>
       </div>
     </div>
   </div>
-  <footer class="main-footer">
-    <h2 class="footer-name"><a href="#">Student Name</a></h2>
-    <h2 class="backtotop"><a href="#">Back to top</a></h2>
+  <footer class="main-footer clearfix">
+    <div class="container">
+      <h2 class="footer-name">Student Name</h2>
+      <div class="footer-nav">
+        <a class="back-to-top" href="#">BACK TO Top</a>
+        <ul class="footer-links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
