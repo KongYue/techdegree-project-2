@@ -98,6 +98,7 @@ p {
 .footer-name {
   float: left;
   margin: 0;
+  font-size: 20px;
 }
 .footer-nav {
   float: right;
@@ -153,6 +154,9 @@ p {
     width: 50%;
     background-color: white;
   }
+ .portfolio-list li {
+  min-height: 423px;
+}
 
 
   .introduction p {
